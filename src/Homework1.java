@@ -19,9 +19,15 @@ public class Homework1 {
 			node = infix(node);
 			System.out.println(inorder(node).substring(1,inorder(node).length()-1) +  "=" + calculate(node));
 		}
+		word  ="251-*32*+";
+		Node node = null;
+		node = infix(node);
+		System.out.println(inorder(node).substring(1,inorder(node).length()-1) +  "=" + calculate(node));
+		TreeDemo tree = new TreeDemo(node);
+		tree.ShowGUI(node);
 	}
 
-	private static boolean isOperator(char o){
+	public static boolean isOperator(char o){
 		if(o == '+' || o == '-' || o == '*' || o =='/' || o == '^')
 			return true;
 		return false;
