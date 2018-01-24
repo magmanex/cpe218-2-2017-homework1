@@ -7,4 +7,9 @@ public class Node {
         left = null;
         right = null;
     }
+
+    @Override
+    public String toString() {
+        return Character.toString(value_node);
+    }
 }

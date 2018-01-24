@@ -14,7 +14,7 @@ public class TreeDemo extends JPanel implements TreeSelectionListener{
         super(new GridLayout(1,0));
         tree = new JTree(createNodes(node));
 
-        ImageIcon leafIcon = new ImageIcon("middle.gif");
+        ImageIcon leafIcon = new ImageIcon(Homework1.class.getResource("middle.gif"));
         if (leafIcon != null) {
             DefaultTreeCellRenderer renderer = new DefaultTreeCellRenderer();
             renderer.setOpenIcon(leafIcon);
