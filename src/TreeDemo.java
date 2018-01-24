@@ -64,7 +64,7 @@ public class TreeDemo extends JPanel implements TreeSelectionListener{
         String tmp = Homework1.inorder(n_node);
         if (n_node.left !=null) {
             if(Homework1.isOperator(n_node.value_node)) {
-                html.setText(tmp.substring(0,tmp.length()) + "=" + Homework1.calculate(n_node));
+                html.setText(tmp.substring(1,tmp.length()-1) + "=" + Homework1.calculate(n_node));
             }
         }
         else {
